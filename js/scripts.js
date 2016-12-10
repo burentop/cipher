@@ -13,4 +13,10 @@ var callFirstTwo = function () {
   return toEncode + reverseFirstLast(capitalize(toEncode));
 };
 
-alert(callFirstTwo());
+var extractMiddle = function (sentence) {
+  var wordLength = sentence.length;
+  var middle = Math.floor(wordLength / 2);
+  return sentence.charAt(middle) + sentence;
+};
+
+alert(extractMiddle(callFirstTwo()));

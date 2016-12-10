@@ -1,4 +1,4 @@
-var toEncode = prompt("Enter a sentence: ");
+var toEncode = prompt("Enter a sentence to be encrypted: ");
 
 var capitalize = function (sentence) {
   var wordLength = sentence.length;

@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
     <title>Cipher</title>
   </head>
   <body>
-    <h1>Cipher</h1>
-    <img class="before" src="img/image1.jpg" alt="A dummy image." />
-    <img class="after" src="img/image2.jpg" alt="A dummy image." />
-    <h3 class="results"></h3>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Cipher</h1>
+        <p>Click on the pictures to see the message before and after encryption.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Before Encryption</h2>
+          <img class="before image" src="img/image1.jpg" alt="A dummy image." />
+        </div>
+        <div class="col-md-6">
+          <h2>After Encryption</h2>
+          <img class="after" src="img/image2.jpg" alt="A dummy image." />
+        </div>
+      </div>
+      <div class="well">
+        <h3 class="results"></h3>
+      </div>
+    </div>
     <script src="js/jquery-3.1.1.js"></script>
     <script src="js/scripts.js"></script>
   </body>

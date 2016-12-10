@@ -25,4 +25,14 @@ var reverse = function (sentence) {
   return reversed.join("");
 };
 
-alert(reverse(extractMiddle(callFirstTwo())));
+var after = reverse(extractMiddle(callFirstTwo()));
+
+
+
+$(".before").click(function () {
+  $(".results").html(toEncode);
+});
+
+$(".after").click(function () {
+  $(".results").html(after);
+});

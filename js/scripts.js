@@ -19,4 +19,10 @@ var extractMiddle = function (sentence) {
   return sentence.charAt(middle) + sentence;
 };
 
-alert(extractMiddle(callFirstTwo()));
+var reverse = function (sentence) {
+  var theArray = sentence.split("");
+  var reversed = theArray.reverse();
+  return reversed.join("");
+};
+
+alert(reverse(extractMiddle(callFirstTwo())));
